@@ -1,0 +1,90 @@
+*{
+	padding : 0;
+	margin : 0;
+	box-sizing : border-box;  
+}
+body{
+	background: bisque;
+	font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	font-size : 22px;
+} 
+.container{
+	background: pink;
+	color: black;
+	text-align: center;
+	font-style: normal;
+	border: 1px solid #dedede;
+	max-width : 1080;
+	margin : 20px auto;
+	overflow : hidden;
+	padding : 10px; 
+}
+/* main */
+.menu{
+	color: black;
+    text-align: center;
+    text-decoration: none
+}
+.fa-light{
+	color: black;
+}
+.left{
+	width : 317px;
+	border : 1px solid black;
+	padding : 10px;
+	margin : 10px;
+	float : left;
+}
+.menu li{
+	text-align:left;
+	}
+.signature{
+	color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.signature img{
+	max-width: 100%;
+	height: 50%;
+	margin-bottom: 15px;
+	list-style: none;
+}
+.middle{
+	width : 600px;
+	border : 1px solid black;
+	padding : 10px;
+	margin : 10px;
+	float : left;
+} 
+.middle img{
+	font-weight: 50;
+} 
+.other{
+	color: black;
+    text-align: center;
+    text-decoration: italic;
+}
+.fa-solid{
+	color: brown;
+}
+.fa-brands{
+	color: brown;
+}
+.right{
+	width : 317px;
+	border : 1px solid black;
+	padding : 10px;
+	margin : 10px;
+	float : left;
+}
+.footer{
+	clear : both;
+	color: black;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	font-size: 17px;
+	border : 1px solid #dedede;
+	padding : 22px;
+	margin : 20px auto;
+	background : pink;
+} 

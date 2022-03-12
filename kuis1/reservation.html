@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Reservation</title></head>
+<body bgcolor="aqua">
+	<form action="submit.php" method="GET">
+		<p>Name: <input type="text" name="username" /></p>
+		<p>E-mail : <input type="email" name="email" /></p>
+		<p>Reservation Date : <input type="date" name="tanggallahir" /></p>
+		<p>Model : 
+            <br><br>
+		<input type="radio" name="Model" value="Buffet"> Buffet </p>
+		<input type="radio" name="Model" value="Banquet"> Banquet </p>
+        <input type="radio" name="Model" value="Ala Carte Menu"> Ala Carte Menu </p>
+        <input type="radio" name="Model" value="Table Service"> Table Service </p>
+		<p>Ready to Reservation?
+		<input type="checkbox" name="bersedia_ikut" value="ya"></p>
+		<input type="reset" value="Reset"> <input type="button" name="submit" value="submit" />
+	</form>
+</body>
+</html>
