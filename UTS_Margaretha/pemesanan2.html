@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" type="text/css" href="styleMember.css"><title>Pemesanan Member</title></head>
+<body>
+    <h1>Silahkan Pesan Makanan Kami</h1><br>
+	<form action="prosesbeliMember.php" method="POST">
+        <table border="0">
+            <tr>
+                <td>ID Pelanngan</td>
+                <td>:</td>
+                <td>
+                    <select name="id" >
+                        <option value="ID Member"> Id-Member-150303</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="Nama Anda"></td>
+            </tr>
+            <tr>
+                <td>Pilih Makanan</td>
+                <td>:</td>
+                <td>
+                    <select name="makanan" >
+                        <option value="Soto Ayam">Soto Ayam Lamongan - 25.000</option>
+                        <option value="Aneka Penyetan">Aneka Penyetan 25.000</option>
+                        <option value="Papeda">Papeda 20.000</option>
+                        <option value="Sate">Sate Ayam - 30.000</option>
+                        <option value="Ayam Mentega">Ayam Mentega 35.000</option>
+                        <option value="Gulai">Gulai Kambing - - 40.000</option>
+                        <option value="Gudeg">Gudeg Jogja - 30.000</option>
+                        <option value="Pecel">Pecel Madiun 20.000</option>
+                        <option value="Rujak">Rujak Cingur - 25.000</option>
+                        <option value="Bakso">Bakso - 25.000</option>
+                        <option value="Pempek">Pempek Palembang - 35.000</option>
+                        <option value="Rendang Sapi" selected>Rendang Sapi - 45.000</option>
+                        <option value="Tidak Membeli"> Tidak Membeli </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Makanan</td>
+                <td>:</td>
+                <td><input type="text" name="jumlah1" placeholder="Jumlah"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" name="submit" value="Lihat Nota Bayar">
+    </form>
+</body>
+</html> 

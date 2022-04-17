@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleHome.css">
+</head>
+
+<body>
+    <b><h2>Menu Terlaris Pondok Mbakyu Ku Surabaya</h2></b>
+    <b><h4>Dibuat dengan resep turun temurun penuh cinta dan ketulusan</h4></b>
+    <div class="container">
+        <div class="content-slide">
+            <div class="imgslide fade">
+                <div class="numberslide"><b>1 / 3</b></div>
+                <img src="img2.jpeg" alt="">
+                <div class="text"><b>Rendang Sapi</b></div>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide"><b>2 / 3</b></div>
+                <img src="img1.jpg" alt="">
+                <div class="text"><b>Ayam Mentega</b></div>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide"><b>3 / 3</b></div>
+                <img src="img3.jpg" alt="">
+                <div class="text"><b>Es Campur Ceria</b></div>
+            </div>
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a> 
+        </div>
+        <div class="page">
+            <span class="dot" onClick="dotslide(1)"></span>
+            <span class="dot" onClick="dotslide(2)"></span>
+            <span class="dot" onClick="dotslide(3)"></span>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+            showSlide(slideIndex);
+        function nextslide(n){
+            showSlide(slideIndex += n);
+        }
+        function dotslide(n){
+            showSlide(slideIndex = n);
+        }
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("imgslide");
+            var dot = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < slides.length; i++) {
+                
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dot[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>
